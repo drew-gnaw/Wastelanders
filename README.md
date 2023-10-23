@@ -40,4 +40,3 @@ Perhaps these weapons can also bring enchantments and buffs.
 ## Story
 *Story Summary here*
 
-
