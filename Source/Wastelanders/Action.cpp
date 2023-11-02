@@ -6,9 +6,15 @@
 Action::Action()
 {
 public:
-	//Player player;
-	//Enemy enemy;
-	//Card card;
+
+	//Field Declaration
+	
+	AActor target;
+	AActor origin;
+
+	// Card card;
+
+	
 }
 
 Action::~Action()
