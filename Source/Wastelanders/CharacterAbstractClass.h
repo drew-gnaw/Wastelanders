@@ -14,7 +14,8 @@ class WASTELANDERS_API ACharacterAbstractClass : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ACharacterAbstractClass();
-
+	
+	UFUNCTION(BlueprintCallable)
 	void TakeDamage(int damage);
 
 protected:
@@ -25,10 +26,16 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-	//Private Fields
+public:
+	//Fields
+	UPROPERTY(BlueprintReadWrite, Category = "Health")
 	int health;
-	int const MAX_HEALTH = 30;
-
+	UPROPERTY(BlueprintReadWrite, Category = "ID")
+	int ID;
+	UPROPERTY(BlueprintReadWrite, Category = "Max Health")
+	int MAX_HEALTH = 30;
+private:
+	//Private constants
+	
 
 };
