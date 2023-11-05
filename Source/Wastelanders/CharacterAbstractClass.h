@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "CharacterAbstract.generated.h"
+#include "CharacterAbstractClass.generated.h"
 
 UCLASS()
-class WASTELANDERS_API ACharacterAbstract : public AActor
+class WASTELANDERS_API ACharacterAbstractClass : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ACharacterAbstract();
+	ACharacterAbstractClass();
 
 protected:
 	// Called when the game starts or when spawned
