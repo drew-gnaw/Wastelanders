@@ -29,11 +29,11 @@ public:
 public:
 	//Fields
 	UPROPERTY(BlueprintReadWrite, Category = "Health")
-	int health;
+	float health;
 	UPROPERTY(BlueprintReadWrite, Category = "ID")
 	int ID;
 	UPROPERTY(BlueprintReadWrite, Category = "Max Health")
-	int MAX_HEALTH = 30;
+	float MAX_HEALTH = 30;
 private:
 	//Private constants
 	
