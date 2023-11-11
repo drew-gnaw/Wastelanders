@@ -31,10 +31,16 @@ void ABaseCard::Tick(float DeltaTime)
 
 }
 
-void ABaseCard::ExecuteCardEffect(ACharacter* Origin, ACharacter* Target)
+void ABaseCard::ExecuteCardEffect(ACharacterAbstractClass* Origin, ACharacterAbstractClass* Target)
 {
 	// this is for game management (Muhammad)
+	Target->TakeDamage(AttackDamage);
 
+}
+
+void ABaseCard::setDamage(int dmg)
+{
+	AttackDamage = dmg;
 }
 
 

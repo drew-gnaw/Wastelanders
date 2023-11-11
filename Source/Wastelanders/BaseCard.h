@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "CharacterAbstractClass.h"
 #include "BaseCard.generated.h"
 
 UCLASS()
@@ -41,6 +42,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-    virtual void ExecuteCardEffect(ACharacter* Origin, ACharacter* Target);
+    UFUNCTION(BlueprintCallable)
+    void setDamage(int dmg);
+
+    virtual void ExecuteCardEffect(ACharacterAbstractClass* Origin, ACharacterAbstractClass* Target);
 
 };
