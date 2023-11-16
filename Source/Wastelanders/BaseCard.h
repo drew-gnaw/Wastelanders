@@ -18,19 +18,19 @@ public:
 
 public:
 
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Card")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Card")
     FString CardName;
 
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Card")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AttackDamage")
     int32 AttackDamage;
 
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Card")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StaggerValue")
     int32 StaggerValue;
 
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Card")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BlockValue")
     int32 BlockValue;
 
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Card")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
     int32 Speed;
 
     
